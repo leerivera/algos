@@ -25,3 +25,18 @@ function number(lines) {
 
 // Testing the function
 console.log(number(["a", "b", "c"]));  // Output: ["1: a", "2: b", "3: c"]
+
+function number(lines) {
+    let result = [];
+
+    for(let i = 0; i < lines.length; i++) {
+        let numberedLine = `${i + 1}: ${lines[i]}`;
+        result.push(numberedLine);
+    }
+
+    return result;
+}
+
+// Testing the function
+console.log(number(["a", "b", "c"]));  // Output: ["1: a", "2: b", "3: c"]
+
