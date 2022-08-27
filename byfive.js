@@ -40,3 +40,14 @@ function roundToNext5(n) {
         return n - (n % 5);
     }
 }
+
+// You can divide the input number by 5, round up to the nearest integer, 
+// then multiply by 5. This has the effect of "rounding up" to the next multiple of 5. 
+// It also simplifies the function, 
+// because Math.ceil() handles positive and negative numbers correctly, 
+// so you don't need separate cases for them.
+
+function roundToNext5(n) {
+    return Math.ceil(n / 5) * 5;
+}
+
