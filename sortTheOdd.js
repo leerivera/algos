@@ -16,3 +16,16 @@ function sortArray(array) {
     // even, we leave it as is. This will sort the odd numbers while leaving the even numbers in place.
     return array.map(n => n % 2 === 0 ? n : oddNumbers.shift());
 }
+
+
+function sortArray(array) {
+    // First, let's extract all the odd numbers from the array and sort them in ascending order.
+    const oddNumbers = array.filter(n => n % 2 !== 0).sort((a, b) => a - b);
+
+    // We'll use a counter to keep track of the next odd number to place in the sorted array
+    let i = 0;
+
+    // Sort the array. For each pair of numbers, if they're both odd, sort them in ascending order.
+    // If one of them is even, it stays in place. The odd numbers are replaced from our sorted oddNumbers array.
+    return array.map(n => n % 2 === 0 ? n : oddNumbers[i++]);
+}
