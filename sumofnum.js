@@ -26,3 +26,8 @@ function newArr(arr){
     }
     return newArr;
 }
+
+
+function newArr(arr) {
+    return arr.map((num, i) => num + (arr[i + 1] || 0));
+}
