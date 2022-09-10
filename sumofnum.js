@@ -27,6 +27,21 @@ function newArr(arr){
     return newArr;
 }
 
+function addNext(arr) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i+1] === undefined) {
+            newArr.push(arr[i]);
+        } else {
+            newArr.push(arr[i] + arr[i+1]);
+        }
+    }
+    return newArr;
+}
+
+console.log(addNext([1, 2, 3, 4, 5]));  // prints: [3, 5, 7, 9, 5]
+
+
 
 function newArr(arr) {
     return arr.map((num, i) => num + (arr[i + 1] || 0));
