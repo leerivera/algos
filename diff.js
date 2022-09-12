@@ -12,4 +12,17 @@
 function arrayDiff(a, b) {
     return a.filter(value => !b.includes(value));
   }
+
+  function arrayDiff(a, b) {
+    let diff = [];
+
+    for (let i = 0; i < a.length; i++) {
+        if (!b.includes(a[i])) {
+            diff.push(a[i]);
+        }
+    }
+
+    return diff;
+}
+
   
