@@ -15,3 +15,15 @@ function validatePIN (pin) {
     //return true or false
    return /^(\d{4}|\d{6})$/.test(pin) ? true : false; 
   }
+
+  function validatePIN(pin) {
+    const pinLength = pin.length;
+    
+    if (pinLength === 4 || pinLength === 6) {
+      if (!isNaN(pin)) {
+        return true;
+      }
+    }
+    
+    return false;
+  }
