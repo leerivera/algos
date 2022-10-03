@@ -16,4 +16,12 @@ function count(string) {
   
     return charCount;
   }
+
+  function count(string) {
+    return string.split('').reduce((charCount, char) => {
+      charCount[char] = (charCount[char] || 0) + 1;
+      return charCount;
+    }, {});
+  }
+  
   
