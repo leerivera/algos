@@ -23,5 +23,17 @@ function count(string) {
       return charCount;
     }, {});
   }
+
+  function count(string) {
+    const charCount = {};
+  
+    for (let i = 0; i < string.length; i++) {
+      const char = string[i];
+      charCount[char] = (charCount[char] || 0) + 1;
+    }
+  
+    return charCount;
+  }
+  
   
   
