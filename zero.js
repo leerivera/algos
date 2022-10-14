@@ -14,3 +14,6 @@ function noBoringZeros(n) {
     }
     return n;
   }
+
+//   Using String Conversion:
+// You can convert the number to a string, then use the replace() method with a regular expression to remove the trailing zeros. Finally, convert the resulting string back to a number.
