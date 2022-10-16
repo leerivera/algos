@@ -24,3 +24,11 @@ function noBoringZeros(n) {
 //   Instead of dividing the number repeatedly by 10, 
 //   you can use a while loop to remove the trailing zeros 
 //   without dividing.  
+
+function noBoringZeros(n) {
+    while (n % 10 === 0 && n !== 0) {
+      n = Math.floor(n / 10);
+    }
+    return n;
+  }
+  
