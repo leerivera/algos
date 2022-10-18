@@ -20,4 +20,7 @@ function noBoringZeros(n) {
 function noBoringZeros(n) {
     return Number(n.toString().replace(/0+$/, ''));
   }
-  
+//   Using a While Loop (without dividing):
+//   Instead of dividing the number repeatedly by 10, 
+//   you can use a while loop to remove the trailing zeros 
+//   without dividing.  
