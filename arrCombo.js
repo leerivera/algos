@@ -5,11 +5,14 @@
 // Make sure that you don't count duplicates; for example solve([[1,2],[4,4],[5,6,6]]) = 4, since the extra outcomes are just duplicates.
 
 
-function solve(arr){
-    //set -> uni values
-    //map [1,2], [4,4], [5,6,6] -> 2,1,2
-    // reduce -> 2*1*2
-    return arr.map(sA=>new Set(sA).size).reduce((a,c)=>a*c, 1)
-}
+// function solve(arr){
+//     //set -> uni values
+//     //map [1,2], [4,4], [5,6,6] -> 2,1,2
+//     // reduce -> 2*1*2
+//     return arr.map(sA=>new Set(sA).size).reduce((a,c)=>a*c, 1)
+// }
 
-console.log([[1,2], [4],[5,6]]), '4' )
+const solve = arr => arr.reduce((a,c)=> a * new Set(c).size, 1)
+
+
+console.log([[1,2], [4],[5,6]]), '4' 
