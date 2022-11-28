@@ -26,4 +26,5 @@ function queueTime(customers, n) {
 
     return Math.max(...tills); // The total time is the maximum time of any till
 }
-// more
+// more efficient solution
+function queueTime(customers, n) {
