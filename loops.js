@@ -17,3 +17,9 @@ for (let i = 0; i < 10; i++) {
 for (const number of numbers) {
   console.log(number);
 }
+
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
