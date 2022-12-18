@@ -15,3 +15,8 @@ function reverseList(list) {
     }
     return array;
   }
+
+    function reverseList(list) {
+        list.reverse();
+
+    }
