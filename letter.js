@@ -27,5 +27,10 @@ function position(letter) {
   
     return `Position of alphabet: ${alphabetPositions[letter.toLowerCase()]}`;
   }
-  
+
+    function position(letter) {
+
+        let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        let position = alphabet.indexOf(letter) + 1;
+    }
   
