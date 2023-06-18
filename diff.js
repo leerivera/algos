@@ -21,7 +21,7 @@ function arrayDiff(a, b) {
             diff.push(a[i]);
         }
     }
-
+//<--  return a.filter(value => !b.includes(value));
     return diff;
 }
 
